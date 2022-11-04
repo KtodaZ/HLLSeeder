@@ -8,7 +8,7 @@ After 60 minutes, the script will shut down the game, unless you intervene.
 
 ## Installation
 
-- Download and extract HLLSeeder.zip anywhere on your computer
+- Download and extract the [release .zip](https://github.com/KtodaZ/HLLSeeder/releases) anywhere on your computer
 - (Optional) Edit `variables.bat` to configure Startup Time and server link
 - Run setup.bat
 
