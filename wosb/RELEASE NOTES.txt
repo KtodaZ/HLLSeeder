@@ -1,0 +1,410 @@
+The following are Developer's Release Notes
+(per software version)
+===========================================
+WakeupOnStandBy
+WOSB.EXE
+
+
+
+Version 1.7.20.6
+===============
+[This version is revertible]
+* In case you want to revert back to previous version of the software, you can replace the current wosb.exe file with the older one (make sure to save it beforehand).
+* IT IS NOT ADVISABLE to run this version along with previous versions of the software.
+
+
+(1) Fixed bugs & inconsistencies reported by users. Thank you!
+
+
+
+Version 1.7.20.5
+===============
+[This version is revertible]
+* In case you want to revert back to previous version of the software, you can replace the current wosb.exe file with the older one (make sure to save it beforehand).
+* IT IS NOT ADVISABLE to run this version along with previous versions of the software.
+
+
+(1) Adjust the way web pages are opened by the program. WOSB will attempt to use default web browser instead of the Internet Explorer.
+
+(2) Fixed minor bugs & inconsistencies reported by users. Thank you!
+
+
+
+Version 1.7.20.4
+===============
+[This version is revertible]
+* In case you want to revert back to previous version of the software, you can replace the current wosb.exe file with the older one (make sure to save it beforehand).
+* IT IS NOT ADVISABLE to run this version along with previous versions of the software.
+
+
+(1) Added an optional new feature to the Settings -> General page to make WakeupOnStandBy wait indefinitely until a process started in item (2) or (3) in its main window, or via command line exits.
+
+(2) Added a new command line parameter /PwdClose that lets users to enable a password to close activated WakeupOnStandBy schedule.
+
+(3) Changed the way diagnostic event log is exported to provide better integrity.
+
+(4) Recompiled the main executable wosb.exe to be compatible with Address Space Layout Randomization (ASLR) and Data Execution Prevention (DEP) security standards. This revokes the module's compatibility with the operating systems earlier than Windows XP SP3. 
+
+(5) Disallowed saving of the diagnostic event log onto a network drive to prevent logging conflicts when such network drive is unavailable. Such may happen during the moments when system resumes from low power state, enters into low power state, reboots, or during other scenarios. Such restriction is enacted only to facilitate debugging.
+
+(6) Added a diagnostic safety feature that will show a critical message box and later crash the WakeupOnStandBy application in a "controllable manner" if writing into a diagnostic event log fails. This precaution is enacted only if user enabled diagnostic event logging. It is designed for advanced users to enhance debugging of the WakeupOnStandBy software.
+
+(7) Added French language User Interface translation.
+
+(8) Fixed other bugs & inconsistencies reported by users. Thank you!
+
+
+
+Version 1.7.20.3
+===============
+[This version is revertible]
+* In case you want to revert back to previous version of the software, you can replace the current wosb.exe file with the older one (make sure to save it beforehand).
+* IT IS NOT ADVISABLE to run this version along with previous versions of the software.
+
+
+(1) Added a new feature to the main context menu: "What wakes this computer?" that extracts information about previous wake events from the Windows Event Log, and also allows to view information on wake devices, as well as to enable/disable supported wake devices.
+
+(2) Reorganized controls in the main window to comply with Windows 10 specifications, removed main window transparency.
+
+(3) Made software compatible with Windows 10.
+
+(4) Added additional debugging options to the diagnostic event log.
+
+(5) Added new context menu options to facilitate user feedback submission.
+
+(6) Improved bug reporting by collecting additional technical information that may facilitate future bug submissions by the software users.
+
+(7) Made WakeupOnStandBy GUI multiple-monitor aware.
+
+(8) Fixed other bugs & inconsistencies reported by users. Thank you!
+
+
+
+Version 1.7.20.2
+===============
+[This version is revertible]
+* In case you want to revert back to previous version of the software, you can replace the current wosb.exe file with the older one (make sure to save it beforehand).
+* IT IS NOT ADVISABLE to run this version along with previous versions of the software.
+
+
+(1) Added a new feature to the main context menu: "New Schedule" that opens a new instance of the WakeupOnStandBy process.
+
+(2) Added a new keyboard shortcut (Ctrl+N) to open a new schedule.
+
+(3) Added internal support for Daylight Saving Adjustments.
+
+(4) Added new options to the "More" tab of the Settings window:
+
+    - "Do not show popup notification balloons on system tray" setting that controls whether or not popup notification balloons are shown on the system tray if WakeupOnStandBy encounters an error.
+
+    - "When scheduled time is invalid due to the Daylight Saving Time change" setting that controls what happens when the automatic time adjustment for the schedule causes the time to be invalid because of the pending Daylight Saving Adjustment.
+
+(5) Provided additional diagnotic information in the automatic reports attached to user submissions via the web site.
+
+(6) Fixed the bug that could cause WakeupOnStandBy not start and report the "antivirus block" on some systems. This bug was caused by the recent Windows update that changed the structure of the registry key used by the WakeupOnStandBy.
+
+(7) Fixed other bugs & inconsistencies reported by users. Thank you!
+
+(8) Updated documentation.
+
+
+
+Version 1.7.20.1
+===============
+[This version is revertible]
+* In case you want to revert back to previous version of the software, you can replace the current wosb.exe file with the older one (make sure to save it beforehand).
+* IT IS NOT ADVISABLE to run this version along with previous versions of the software.
+
+
+(1) Added support for the German language UI.
+
+(2) Added UI language switcher on the front page of the program. (It is displayed as the flag of the country currently selected for the UI language.)
+
+(3) Improved auto-adjustment of the main window and its controls for smaller screens as well as for the larger DPI settings.
+
+(4) Added additional information in the diagnostic log & into bug reporting concerning power capabilities of the system that the program runs on.
+
+(5) Fixed additional bugs reported by users.
+
+
+
+Version 1.7.20
+===============
+[This version is revertible]
+* In case you want to revert back to previous version of the software, you can replace the current wosb.exe file with the older one (make sure to save it beforehand).
+* IT IS NOT ADVISABLE to run this version along with previous versions of the software.
+
+
+(1) Fixed multiple bugs reported by users, including bugs in scheduling, Repetitive mode, UI, etc.
+
+(2) Fixed bugs and improved the drag-and-drop functionality. Now the program supports end-users dragging various files, links, URLs and text into its main window controls.
+
+(3) Cleared up and simplified main window UI, as well as UI in other secondary windows.
+
+(4) Added "Save All Schedules As Batch File" option to allow saving of multiple running schedules in a single batch file.
+
+(5) Added "Exit All Schedules" option to close multiple running copies of the WakeupOnStandBy program.
+
+(6) Added on option to Shift-Click the "Start/Exit" button in the main window to close all running schedules (if such are present.)
+
+(7) Added keyboard shortcuts to the mostly used context menu commands.
+
+(8) Added new setting, "Do not play beeps and sounds during operation" that should prevent the program from playing sounds during its operation. (This does not include default sounds from Windows message boxes.)
+
+(9) Extended the number of allowed copies of the WakeupOnStandBy that can run simultaneously from 16 to 256.
+
+(10) Improved memory management that will increase the program's performance and speed up start-up time.
+
+(11) Added support for larger screen DPIs, provided improved quality graphics.
+
+(12) Prepared the source code for possible foreign languages translation.
+
+(13) Added video tutorials with visual step-by-step demonstrations on how to use the WakeupOnStandBy program.
+
+(14) Code-signed the main wosb.exe file to provide additional end-user security. Make sure that the wosb.exe file is signed by "Dennis A. Babkin" publisher.
+
+
+
+Version 1.7.19
+===============
+[This version is revertible]
+* In case you want to revert back to previous version of the software, you can replace the current wosb.exe file with the older one (make sure to save it beforehand).
+* IT IS NOT ADVISABLE to run this version along with previous versions of the software.
+
+
+(1) Fixed additional internal bugs that were missed since the previous migration to Unicode architecture. The following has been affected: "repair network" feature; running in a Repetitive Mode with command line parameters longer than 256 characters; saving of batch (.BAT) files; the use of non-English characters in command line parameters for the items (2) and (3).
+
+(2) Improved the overall stability of the program by fixing other reported crashes.
+
+(3) The software should now fully support non-English operating systems.
+
+
+
+Version 1.7.18
+===============
+[This version is NOT FULLY revertible]
+* The following may not function properly if you revert to the previous version of the software:
+ - The Event Log File is now stored in a new format, which may lead a previous version to crash if Event Logging is enabled.
+* IT IS ADVISABLE to disable Event Logging in case you decide to go to the previous version.
+* IT IS NOT ADVISABLE to run this version along with previous versions of the software.
+
+
+(1) This version has undergone a major internal overhaul. We've fully converted it to Unicode, which will enable a flawless support for non-English languages. (Although we've done our best to weed out all the bugs that might have resulted from this changeover, in case we've missed some, send us your feedback and we'll correct them in the next update.)
+
+(2) Discontinued support for Windows 9x Operating Systems. Windows 2000 is marginally supported. (Will keep an older version of the software available for older OS's.)
+
+
+
+Version 1.7.17
+===============
+[This version is revertible]
+* In case you want to revert back to previous version of the software, you can replace the current wosb.exe file with the older one (make sure to save it beforehand).
+* IT IS NOT ADVISABLE to run this version along with previous versions of the software.
+
+
+(1) Fixed the locale error message for some non-English languages that was showing up during the WOSB start-up.
+
+(2) Added two compatibility manifests for the Windows Vista and Windows 7.
+
+(3) Fixed a bug in the option that holds off screen saver, keeps the screen off, and at the same time prevents automatic sleep mode. The bug could manifest itself when all three options were used at the same time on Windows Vista/7.
+
+
+
+Version 1.7.16
+===============
+[This version is revertible]
+* In case you want to revert back to previous version of the software, you can replace the current wosb.exe file with the older one (make sure to save it beforehand).
+* IT IS NOT ADVISABLE to run this version along with previous versions of the software.
+* THE LIST OF SUPPORTED OPERATING SYSTEMS WAS UPDATED.
+
+
+(1) This version also includes updates for v. 1.7.15 that was not officially released. So please refer to those as well.
+
+(2) Included a full support for Windows 7 and Windows Vista (all versions). This includes small fixes and bugs specific for those OS's.
+
+(3) Reworked the internal mechanism of scheduling events and waking the system up from a suspended mode. Adjusted it for specifics in Windows Vista and Windows 7.
+
+(4) The program can now detect if the wake timers are disabled in the Power Options in Windows 7, warn a user from the main window and give them an option to enable them.
+
+(5) Added ability to track when the system runs on a battery power and warn user that the wake timers may be disabled by default. (In this case the program will not be able to enable them. To remedy the situation plug the system into the AC power source.)
+
+(6) Added helpful links and expanded the main menu. The main menu is also now available after a right-click on the main window. Renamed "Save As .BAT File" into the full English "Save as Batch File" phrase.
+
+(7) Added internal option to log diagnostic events about the program's operation into the Event Log File (check Settings -> More). This option is disabled by default though. Use it to diagnose the program's operation. It is recommended to enable it during the beta testing stage.
+
+(8) Added a link to the Twitter page where we will be issuing "live" updates about this and other software. Please sign up and follow us there. We appreciate your support!
+
+(9) Added a new Vista "Glass" visual theme to give the program an appropriate OS look.
+
+(10) Added new Settings option to suppress the warning when exiting the program from the Repetitive Mode.
+
+(11) Added new Settings option to suppress the warning when the program is running from a non-fixed drive.
+
+(12) Added new Settings option to mask sensitive command line parameters (like password required to close the program). Warning: This option is still not providing an absolute protection for your passwords! FYI: The command line password option will be deprecated in the next release of the program.
+
+(13) Added new Settings options to control the way event logging is done.
+
+(14) Removed the Windows auto-logon option for Windows Vista and Windows 7. This is a deprecated feature in the OS itself. It is STRONGLY recommended not to use that option in the earlier versions of the OS since it exposes your Windows user password in unprotected form in the system registry that makes it vulnerable for an attack!
+
+(15) Changed the default value for the "Skip operations if event triggered later than N seconds after the scheduled time" setting to 120 seconds. This will rememdy the bug when the program may skip scheduled operations in case of a slow return from hibernation.
+
+(16) Added a link to the main window for "Make this software better" to open up a window with links to re-direct users to various resources that can help us all to improve this and other software.
+
+(17) Added ability to drag each of the program's windows by their body. This will help people with smaller screens (on mobile devices) to cope with somewhat larger window sizes in this version.
+
+(18) Deprecated support for Windows 95, 98, ME. This will make the module run faster and smaller in size. (For those who still use those OS's, we're planning to keep v. 1.7.14 available on the website.) The future version of the program will most certainly also stop supporting Windows 2000. We're asking for your feedback if someone is still using that OS?
+
+(19) Added descriptional popup prompts for the controls in the main window of the program.
+
+(20) Added ability to detect the situation when the program's executable file has the Internet Zone flag attached to it, which may prevent the program from running correctly in the Repetitive Mode as well as show some security warnings.
+
+(21) Re-designed the Command Line Help window. Made it resizable and more manageable for reading.
+
+(22) ANNOUNCEMENT: WakeupOnStandBy software will be deprecated in the next major release in favor of a merged product. The new product will also be distributed for free. Follow our further announcements on the web site.
+
+
+
+Version 1.7.15
+===============
+[This version is NOT FULLY revertible]
+* The following may not function properly if you revert to the previous version of the software:
+ - Some tasks scheduled in the Repetitive Mode may not function correctly with the older version.
+* IT IS ADVISABLE to reset all the tasks (external scripts) running in the Repetitive Mode before using the new version.
+* IT IS NOT ADVISABLE to run this version along with previous versions of the software.
+
+
+(1) Adjusted the way WOSB uses the "start" Command Prompt command in its batch (BAT) files, namely when the empty string (i.e., "") is added before the file path to indicate empty title for the Windows-NT-based OS. This fix complies with the MS Windows OS specifications and attempts to fix some reported issues when running/opening documents/other programs;
+
+(2) Added formatting of the batch file Command Line Helper for better readability and compatibility with older versions of OS;
+
+(3) Added "Save As .BAT File..." and "Report Glitch" menu commands to the system tray icon context menu to facilitate a user bug report submission;
+
+(4) Fixed the glitch when 12:00 AM time (midnight) was not interpreted correctly during the Repetitive Mode scheduling and in some cases in batch files;
+
+(5) Added user-friendly helper windows to submit Glitch Report and improve the software, as well as the Antivirus Compatibility Memo window (prompted by increased number of user feedback submissions based on the software incompatibility with various third-party antivirus software products);
+
+(6) Added software status reporting function designed to facilitate user glitch report submission;
+
+(7) Provided additional redundancy to check when an antivirus program thwarts execution of WOSB functions;
+
+(8) Fix the glitch when multiple instances of the program might be mixed-up and/or lost during rebooting of the system if running in the Repetitive Mode;
+
+(9) Added the settings field to control the number of seconds to skip the operation(s) if triggered later than the scheduled time. This should also fix the bug when the program/file may not run due to synchronization issue in the Repetitive Mode;
+
+(10) Modified the program's taskbar and system tray icons to display an instance number (or Visual ID) in the Multi-session mode with more than one instance of the program running simultaneously;
+
+(11) Added new command line parameter "vid" to allow a user to set Visual ID for the instance of the program, primarily designed for better visual identification of several simultaneously running instances of the program;
+
+(12) Added new main menu option to create the "Clear-All" link to close all running instances of the program;
+
+(13) Fixed the glitch when the schedule was reset to the next cycle in Repetitive Mode if the system was rebooted during the period of time when the program was waiting for the operation specified in the item (3) of the main menu;
+
+(14) Reorganized the internal workings of the communication between multiple instances of the program running at the same time, changed the maximum number of simultaneously running instances to 16;
+
+(15) Reorganized the internal workings of the scheduling engine. This should solve most of the reported glitches concerning the Repetitive Mode operation;
+
+(16) Added new safety feature that would skip operation(s) scheduled for the past time;
+
+(17) Added new settings option to control how the waiting period specified in the item (3) of the main window is timed. Now available is the checkbox setting to set the program to time it from the moment when all previous scheduled operation(s) are completed, as well as an option to time it from the date & time set for the system to wake up. This should also fix the glitch when the scheduling may "wander off" during some repeating operations in the Repetitive Mode;
+
+(18) Reorganized the internal workings of the mechanism for canceling the Repetitive Mode, also changed the user warning message when exiting the Repetitive Mode;
+
+(19) Added new settings option to omit the warning message when a user clicks Exit command when the Repetitive Mode is activated;
+
+(20) Added new settings option to change the maximum allowed number of items displayed in the drop-down helper boxes of the main window. Allowed range of values is now 1 through 64;
+
+(21) Reorganized the internal workings of the machanism responsible for placing the program's start-up command line into the Windows autostart key in the System Registry. This should fix the glitch when some instances of the program might be lost during rebooting of the system when running in the Repetitive Mode from the Multi-session link;
+
+(22) Added new command line parameter "wfct" to control the settings option described in (17) above;
+
+(23) Added new command line parameter "/weekdays2dt" to make the weekdays parameter override the date;
+
+(24) Reorganized the mechanism of handling the situation when instance of the software is protected by a password. Fixed the glitch when /closeall command was applied to such instance;
+
+(25) Added new option to view and save Schedules Report that displays/saves a report on all schedules currently set up in all instances of the program;
+
+(26) Reorganized the internal workings of synchronization when more than one instance of the program is run during system autostart. This should fix the glitch when some of the instances of the program run in Multi-session Mode could be confused/omitted when the system was rebooted;
+
+(27) Added new internal feature that synchs the system clock with the timers that are used to fire events scheduled through WOSB. The frequency of this synch can be changed through the StpFreqWBPOS Registry value, in seconds. (It is set to 1 minute by default.) On some older OS's (i.e. Windows 98/ME), this could've led to the discrepancy between the system time and the time when scheduled event was supposed to fire, which, if greater than the value in the "Skip operation(s) if triggered later than:" setting could've caused the task to be skipped by the WOSB altogether;
+
+(28) Corrected the way batch files are composed for the older OS's (i.e. Windows 98/ME) to prevent error messages/warnings when those batch files are run;
+
+(29) Deprecated the following special words %DATE%, %TIME%, %DATETIMESTAMP%, %FILETIMESTAMP% that could be used with the command line parameters, and replaced them with #DATE#, #TIME#, #DATETIMESTAMP#, #FILETIMESTAMP# respectively due to the former ones being used in the older OS's;
+
+(30) Fixed the glitch when special words such as #DATE#, #TIME#, #DATETIMESTAMP#, #FILETIMESTAMP# were interpreted incorrectly at the time when the schedule was set instead of when the task was supposed to run as described in the manual.
+
+
+
+Version 1.7.14
+===============
+[This version is revertible]
+* In case you want to revert back to previous version of the software, you can replace the current wosb.exe file with the older one (make sure to save it beforehand).
+* IT IS NOT ADVISABLE to run this version along with previous versions of the software.
+
+
+(1) Fixed the glitch when "date" command line parameter was used along with the "weekdays" in Repetitve Mode for a day later than today;
+
+(2) Updated the Command Line Help window to be more user-friendly, provided the link to the on-line FAQ page for the current set of user questions & answers;
+
+(3) Introduced two new command line commands: "dt" and "tm" that supercede "date" and "time" by allowing a local date & time format as command line parameters;
+
+(4) Added the "All" button to the main window of the program allowing to select (or de-select) all of the weekday checkboxes for the Repetetive Mode;
+
+(5) Fixed the glitch when the program would not run certain shortcut files (with the .lnk or .url extensions);
+
+(6) Added functionality that re-arranges the weekday checkboxes in main window of the program in accordance with the local date & time format preferences (i.e. depending if the week starts with Sunday, or Monday, etc.);
+
+
+
+Version 1.7.13
+===============
+[This version is revertible]
+* In case you want to revert back to previous version of the software, you can replace the current wosb.exe file with the older one (make sure to save it beforehand).
+* IT IS NOT ADVISABLE to run this version along with previous versions of the software.
+
+
+(1) Fixed the glitch when the software would use up almost 99% of CPU time if run from a service at the Windows NT-based system startup, or from a non-interactive desktop;
+
+(2) Added user message warnings when the software is run from a non-interactive desktop;
+
+(3) Re-designed user interface when the software is run from a non-interactive desktop (removed message boxes since user will not be able to see them anyway);
+
+(4) Adjusted Repetitive Mode internal workings that will prevent the System Registry values from being set if the software is run from a non-interactive desktop;
+
+
+
+Version 1.7.12
+===============
+[This version is revertible]
+* In case you want to revert back to previous version of the software, you can replace the current wosb.exe file with the older one (make sure to save it beforehand).
+* IT IS NOT ADVISABLE to run this version along with previous versions of the software.
+
+
+(1) Added "If it is an executable program, do not run if it is already running" option to the General page in Settings (Refer to online manual for detailed explanation);
+
+(2) Added "Enable Windows auto-logon if WakeupOnStandBy is in Repetitive Mode" option to the General page in Settings (Refer to online manual for detailed explanation);
+
+(3) Added support for preceding program's path with asterisk (*) in the main window of WOSB to make sure only one instance is run (Refer to online manual for detailed explanation);
+
+(4) Added support for preceding program's path with asterisk (*) in the 'file' and 'awfile' command line parameters to make sure only one instance is run (Refer to online manual for detailed explanation);
+
+(5) Made "Command Line Help" window to resize automatically to fit the screen;
+
+(6) Attempted to adjust the function canceling the screen saver and waking up screen after reports of WOSB locking up in some circumstances. Test results regarding this issue are inconclusive;
+
+(7) <Canceled>
+
+(8) Increased the number of elements stored in the drop-down lists for the file/program/web page URLs from 8 to 12, set by default when WOSB is run for the first time. (To adjust already set value read item(9));
+
+(9) Added support to change the maximum number of elements stored in the drop-down lists for the file/program/web page URLs. The value can be any integer from 1 to 63. To change modify the following Registry key: 
+HKEY_CURRENT_USER\Software\from Dennis Babkin\Wake-Up On Stand-by\Settings\MRU_NumEntries
+
+(10) Redesigned the Repetitive Mode internal mechanism in light of the changes in the item(2);
+
+(11) Removed "visual flicker" when the software was activated from a command line with the '/systray' parameter, which required it to start from the system tray;
+
+(12) Fixed the glitch when user settings were not saved if the system was shut-down, rebooted or if user logged off right after the Settings window options were changed and WOSB was not closed manually thereafter;
+
+(13) Fixed the glitch when incorrect version of the software may be reported to our support web site from the About window links;
+
+
