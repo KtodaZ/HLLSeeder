@@ -4,8 +4,11 @@ CALL config.bat
 
 rem Clicks URL to open game
 START "" %serverUrl%
-SLEEP 80
+SLEEP 60
 rem Click URL again to join server, it takes 2 clicks since last patch
+START "" %serverUrl%
+SLEEP 20
+rem Some users were having issues with opening the server, try a third time to make sure you're in
 START "" %serverUrl%
 
 
