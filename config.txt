@@ -1,0 +1,3 @@
+startupTime="7:00:00"
+serverUrl="steam://connect/192.169.89.18:26662"
+closeGameAfterMinutes="120"

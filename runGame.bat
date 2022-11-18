@@ -1,16 +1,16 @@
 @echo off
-CD ../
-CALL config.bat
+
+for /f "delims=" %%x in (config.txt) do (set "%%x")
 
 rem Clicks URL to open game
 START "" %serverUrl%
 SLEEP 60
 rem Click URL again to join server, it takes 2 clicks since last patch
 START "" %serverUrl%
-SLEEP 20
-rem Some users were having issues with opening the server, try a third time to make sure you're in
-START "" %serverUrl%
 
+rem IF YOU HAVE PROBLEMS CONNECTING TO THE SERVER, TRY UNCOMMENTING THE LINES BELOW BY REMOVING 'rem'
+rem SLEEP 20
+rem START "" %serverUrl%
 
 ECHO "Game will automatically close in %closeGameAfterMinutes% minutes from this message"
 ECHO "Close this window to cancel the process"
