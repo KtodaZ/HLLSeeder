@@ -1,10 +1,16 @@
-# HLLSeeder
+# HLLSeeder. 
 
- Seeding Script for Automatically Launching and Seeding a Hell Let Loose server
+![GitHub](https://img.shields.io/github/license/KtodaZ/HLLSeeder)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/KtodaZ/HLLSeeder)
+![GitHub all releases](https://img.shields.io/github/downloads/KtodaZ/HLLSeeder/total)
+
+Seeding Script for Automatically Launching and Seeding a Hell Let Loose server
 
 This script will automatically wake your computer up, start Hell Let Loose and connect you to a preconfigured server.
 
-After 60 minutes, the script will shut down the game, unless you intervene.
+After 60 minutes, the script will shut down the game, unless you intervene.  
+
+This script runs 100% locally. It uses .bat scripts which you can inspect yourself.
 
 ## Installation
 
