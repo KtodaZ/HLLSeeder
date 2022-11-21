@@ -10,6 +10,6 @@ type "TaskSchedulerTemplate.xml"|repl "workDir" "%workDir%"|repl "startTime" "%s
 schtasks /create /xml "%workDir%\TaskSchedulerTemplate_Local.xml" /tn "HLL-Seeder"
 
 ECHO "Setup Complete. Your game should now start every day at %startupTime%."
-ECHO "To turn turn off the schedule, disable in windows Task Scheduler."
+ECHO "To remove from your system or disable, run uninstall.bat"
 
 PAUSE
