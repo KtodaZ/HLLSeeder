@@ -1,4 +1,4 @@
-# HLLSeeder. 
+# HLLSeeder
 
 ![GitHub](https://img.shields.io/github/license/KtodaZ/HLLSeeder)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/KtodaZ/HLLSeeder)
@@ -19,7 +19,15 @@ This script runs 100% locally. It uses .bat scripts which you can inspect yourse
 - (Optional) Edit `config.txt` to configure Startup Time and server link. ESPT Members set the time to 10AM ET (in your local time)
 - Run setup.bat
 
+## Uninstall
+
+- Run `uninstall.bat`
+
+## Changing the start time  
+
+- Edit the time you want the script to start, run `uninstall.bat`, then re-run `setup.bat`
+
 ## How this script works
 
 - Running setup.bat creates a windows scheduled task that runs `runGame.bat` at the set time every day.
-- After the desired time, the game closes, unless you close the running cmd before the configured time in `config.txt`
+- After the desired time, the game closes, unless you close the running cmd window before the configured time in `config.txt`
