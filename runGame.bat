@@ -9,6 +9,10 @@ timeout /t 60 /nobreak
 rem Click URL again to join server, it takes 2 clicks since last patch
 START "" %serverUrl%
 
+timeout /t 60 /nobreak
+rem In some cases, steam blocks the first attempt at opening game, so try one more time.
+START "" %serverUrl%
+
 ECHO "Game will automatically close in %closeGameAfterMinutes% minutes from this message"
 ECHO "Close this window to cancel the process"
 set /A timeout =  %closeGameAfterMinutes%*60

@@ -16,7 +16,7 @@ This script runs 100% locally. It uses .bat scripts which you can inspect yourse
 
 - Download and extract the [release .zip](https://github.com/KtodaZ/HLLSeeder/releases) anywhere on your computer
 - If you are updating from an old version, delete the old version first
-- (Optional) Edit `config.txt` to configure Startup Time and server link. ESPT Members set the time to 10AM ET (in your local time)
+- (optional) Change serverUrl or closeGameAfterMinutes in config.txt.
 - Run setup.bat
 
 ## Uninstall
@@ -25,7 +25,7 @@ This script runs 100% locally. It uses .bat scripts which you can inspect yourse
 
 ## Changing the start time  
 
-- Edit the time you want the script to start, run `uninstall.bat`, then re-run `setup.bat`
+- Simply re-run setup.bat
 
 ## How this script works
 
